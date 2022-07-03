@@ -9,13 +9,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var UrunadiLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let sayhHello = "Hello Word"
-        print(sayhHello)
+        UrunadiLabel.text = "Merhaba"
+        
     }
 
-
+    @IBAction func goto2(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let goToViewController = storyboard.instantiateViewController(withIdentifier: "SecondPage") as! SecondViewController
+        goToViewController.modalPresentationStyle = .fullScreen
+        self.present(goToViewController, animated: true, completion: nil)
+        
+    }
+    
 }
 

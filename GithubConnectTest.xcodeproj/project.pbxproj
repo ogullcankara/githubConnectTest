@@ -16,6 +16,8 @@
 		0A558411286759F600F09748 /* GithubConnectTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A558410286759F600F09748 /* GithubConnectTestTests.swift */; };
 		0A55841B286759F600F09748 /* GithubConnectTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55841A286759F600F09748 /* GithubConnectTestUITests.swift */; };
 		0A55841D286759F600F09748 /* GithubConnectTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55841C286759F600F09748 /* GithubConnectTestUITestsLaunchTests.swift */; };
+		0A55842A28707AFD00F09748 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55842928707AFD00F09748 /* SecondViewController.swift */; };
+		0A55842C2870FAA900F09748 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55842B2870FAA900F09748 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		0A558416286759F600F09748 /* GithubConnectTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubConnectTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A55841A286759F600F09748 /* GithubConnectTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubConnectTestUITests.swift; sourceTree = "<group>"; };
 		0A55841C286759F600F09748 /* GithubConnectTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubConnectTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0A55842928707AFD00F09748 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		0A55842B2870FAA900F09748 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				0A558402286759F600F09748 /* Assets.xcassets */,
 				0A558404286759F600F09748 /* LaunchScreen.storyboard */,
 				0A558407286759F600F09748 /* Info.plist */,
+				0A55842928707AFD00F09748 /* SecondViewController.swift */,
+				0A55842B2870FAA900F09748 /* ThirdViewController.swift */,
 			);
 			path = GithubConnectTest;
 			sourceTree = "<group>";
@@ -258,7 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A55842A28707AFD00F09748 /* SecondViewController.swift in Sources */,
 				0A5583FE286759F300F09748 /* ViewController.swift in Sources */,
+				0A55842C2870FAA900F09748 /* ThirdViewController.swift in Sources */,
 				0A5583FA286759F300F09748 /* AppDelegate.swift in Sources */,
 				0A5583FC286759F300F09748 /* SceneDelegate.swift in Sources */,
 			);
