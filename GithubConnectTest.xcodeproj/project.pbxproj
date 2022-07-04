@@ -18,6 +18,7 @@
 		0A55841D286759F600F09748 /* GithubConnectTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55841C286759F600F09748 /* GithubConnectTestUITestsLaunchTests.swift */; };
 		0A55842A28707AFD00F09748 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55842928707AFD00F09748 /* SecondViewController.swift */; };
 		0A55842C2870FAA900F09748 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55842B2870FAA900F09748 /* ThirdViewController.swift */; };
+		0A69D5A32873A4D000157B9F /* Kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69D5A22873A4D000157B9F /* Kisiler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		0A55841C286759F600F09748 /* GithubConnectTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubConnectTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0A55842928707AFD00F09748 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		0A55842B2870FAA900F09748 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		0A69D5A22873A4D000157B9F /* Kisiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisiler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				0A558407286759F600F09748 /* Info.plist */,
 				0A55842928707AFD00F09748 /* SecondViewController.swift */,
 				0A55842B2870FAA900F09748 /* ThirdViewController.swift */,
+				0A69D5A22873A4D000157B9F /* Kisiler.swift */,
 			);
 			path = GithubConnectTest;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				0A55842C2870FAA900F09748 /* ThirdViewController.swift in Sources */,
 				0A5583FA286759F300F09748 /* AppDelegate.swift in Sources */,
 				0A5583FC286759F300F09748 /* SceneDelegate.swift in Sources */,
+				0A69D5A32873A4D000157B9F /* Kisiler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="33t-IN-eAN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -17,19 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yemekresim" translatesAutoresizingMaskIntoConstraints="NO" id="Kq6-hM-Ejm">
-                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="LZ7-My-DnT"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tavuk Izgara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOm-Hn-azy">
-                                <rect key="frame" x="16" y="352" width="382" height="36"/>
+                                <rect key="frame" x="16" y="396" width="382" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKC-6I-KWk">
-                                <rect key="frame" x="16" y="396" width="382" height="368.5"/>
+                                <rect key="frame" x="16" y="440" width="382" height="328"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Tavada ızgara tavuk yapımında; 3 parça kemiksiz pirzola tavuk etini orta boy bir kaba koyun. Üzerine yarım yemek kaşığı yoğurt, yarım çay kaşığı biber salçası, 2 yemek kaşığı zeytinyağı, tuz, kimyon ve az miktar köri ekleyin. Eliniz ile iyice harmanlayın. Bu şekilde 1 saat kadar dinlenmeye bırakın.
 
@@ -46,11 +46,11 @@ Tavada ızgara tavuklar piştikten sonra servis tabağına alın. Yanında pirin
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJs-8c-IpM">
-                                <rect key="frame" x="16" y="784.5" width="382" height="57.5"/>
+                                <rect key="frame" x="16" y="788" width="382" height="54"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sonraki Tarif"/>
                                 <connections>
-                                    <action selector="goto2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NnT-7H-f6C"/>
+                                    <action selector="goto2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dyx-FZ-YZd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -76,13 +76,15 @@ Tavada ızgara tavuklar piştikten sonra servis tabağına alın. Yanında pirin
                             <constraint firstItem="Kq6-hM-Ejm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wIH-yO-MB6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="F35-SU-1bl"/>
                     <connections>
                         <outlet property="UrunadiLabel" destination="cOm-Hn-azy" id="XKn-rF-4Vs"/>
+                        <segue destination="ffK-1t-NX6" kind="show" identifier="gofrom1to2" id="dkY-xU-5jp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="79.6875"/>
+            <point key="canvasLocation" x="944.92753623188412" y="79.6875"/>
         </scene>
         <!--İkinci Sayfa-->
         <scene sceneID="1XJ-Sm-xyh">
@@ -93,13 +95,13 @@ Tavada ızgara tavuklar piştikten sonra servis tabağına alın. Yanında pirin
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMJ-U2-Jzg">
-                                <rect key="frame" x="187" y="210" width="40" height="84"/>
+                                <rect key="frame" x="187" y="254" width="40" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isf-SS-hiE">
-                                <rect key="frame" x="171" y="558" width="72" height="31"/>
+                                <rect key="frame" x="171" y="602" width="72" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Go to 3"/>
                                 <connections>
@@ -107,7 +109,7 @@ Tavada ızgara tavuklar piştikten sonra servis tabağına alın. Yanında pirin
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQ3-oU-a05">
-                                <rect key="frame" x="169.5" y="679" width="75" height="31"/>
+                                <rect key="frame" x="169.5" y="723" width="75" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Dismiss"/>
                                 <connections>
@@ -131,7 +133,7 @@ Tavada ızgara tavuklar piştikten sonra servis tabağına alın. Yanında pirin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oDG-8a-UkA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855" y="80"/>
+            <point key="canvasLocation" x="1763.7681159420292" y="79.6875"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="tW8-RQ-2mY">
@@ -178,7 +180,25 @@ Tavada ızgara tavuklar piştikten sonra servis tabağına alın. Yanında pirin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CF2-sw-c4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1663.7681159420292" y="79.6875"/>
+            <point key="canvasLocation" x="2573.913043478261" y="79.6875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="P0U-nU-7SC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="33t-IN-eAN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fds-KH-6hb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gs8-JM-LAF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ptr-qe-tuK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="79.6875"/>
         </scene>
     </scenes>
     <resources>
