@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="33t-IN-eAN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -16,70 +16,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yemekresim" translatesAutoresizingMaskIntoConstraints="NO" id="Kq6-hM-Ejm">
-                                <rect key="frame" x="0.0" y="88" width="414" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="LZ7-My-DnT"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tavuk Izgara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOm-Hn-azy">
-                                <rect key="frame" x="16" y="396" width="382" height="36"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcW-1h-2eW">
+                                <rect key="frame" x="175" y="178" width="64" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKC-6I-KWk">
-                                <rect key="frame" x="16" y="440" width="382" height="328"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Tavada ızgara tavuk yapımında; 3 parça kemiksiz pirzola tavuk etini orta boy bir kaba koyun. Üzerine yarım yemek kaşığı yoğurt, yarım çay kaşığı biber salçası, 2 yemek kaşığı zeytinyağı, tuz, kimyon ve az miktar köri ekleyin. Eliniz ile iyice harmanlayın. Bu şekilde 1 saat kadar dinlenmeye bırakın.
-
-Daha sonra geniş bir tavayı ocağın üzerine koyun. Yüksek ateşte tavayı iyice kızdırın. Tava yeterince kızdığında içine soslu tavuk etlerini koyun. Orta ateş üzerinde tavada ızgara tavukları arkalı önlü pişirin.
-
-Tavada ızgara tavuklar piştikten sonra servis tabağına alın. Yanında pirinç ya da bulgur pilavı ve közlenmiş biber ile sıcak olarak servis edebilirsiniz.
-
-Daha sonra geniş bir tavayı ocağın üzerine koyun. Yüksek ateşte tavayı iyice kızdırın. Tava yeterince kızdığında içine soslu tavuk etlerini koyun. Orta ateş üzerinde tavada ızgara tavukları arkalı önlü pişirin.
-
-Tavada ızgara tavuklar piştikten sonra servis tabağına alın. Yanında pirinç ya da bulgur pilavı ve közlenmiş biber ile sıcak olarak servis edebilirsiniz.
-</string>
-                                <color key="textColor" systemColor="labelColor"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fHu-u5-P2w">
+                                <rect key="frame" x="30" y="431" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJs-8c-IpM">
-                                <rect key="frame" x="16" y="788" width="382" height="54"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Sonraki Tarif"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="goto2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dyx-FZ-YZd"/>
+                                    <action selector="girdiAlani:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="6oO-uu-erT"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbH-5h-7hE">
+                                <rect key="frame" x="131" y="606" width="152" height="62"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Gönder">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="gonder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQC-fa-Iif"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cOm-Hn-azy" secondAttribute="trailing" constant="16" id="5cZ-0U-Mqb"/>
-                            <constraint firstItem="oJs-8c-IpM" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.07" id="A3S-V5-gRZ"/>
-                            <constraint firstItem="Kq6-hM-Ejm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EC9-iB-vHK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kq6-hM-Ejm" secondAttribute="trailing" id="KGQ-5y-U0F"/>
-                            <constraint firstItem="cOm-Hn-azy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="PEp-G7-gYj"/>
-                            <constraint firstItem="HKC-6I-KWk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="PLY-Ti-emO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oJs-8c-IpM" secondAttribute="trailing" constant="16" id="SWC-d5-SVU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HKC-6I-KWk" secondAttribute="trailing" constant="16" id="Ugc-Gg-Huw"/>
-                            <constraint firstItem="HKC-6I-KWk" firstAttribute="top" secondItem="cOm-Hn-azy" secondAttribute="bottom" constant="8" id="bsR-OV-dKT"/>
-                            <constraint firstItem="oJs-8c-IpM" firstAttribute="top" secondItem="HKC-6I-KWk" secondAttribute="bottom" constant="20" id="chm-fw-BXC"/>
-                            <constraint firstItem="cOm-Hn-azy" firstAttribute="top" secondItem="Kq6-hM-Ejm" secondAttribute="bottom" constant="8" id="dfQ-vz-jWw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oJs-8c-IpM" secondAttribute="bottom" constant="20" id="dzl-ND-SBH"/>
-                            <constraint firstItem="HKC-6I-KWk" firstAttribute="top" secondItem="cOm-Hn-azy" secondAttribute="bottom" constant="8" id="nJI-qp-qcL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HKC-6I-KWk" secondAttribute="trailing" constant="16" id="nYb-nQ-kAh"/>
-                            <constraint firstItem="oJs-8c-IpM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oUF-XU-fsV"/>
-                            <constraint firstItem="oJs-8c-IpM" firstAttribute="top" secondItem="HKC-6I-KWk" secondAttribute="bottom" constant="20" id="t7b-ul-F4C"/>
-                            <constraint firstItem="Kq6-hM-Ejm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wIH-yO-MB6"/>
+                            <constraint firstItem="VcW-1h-2eW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Zz-RR-H9K"/>
+                            <constraint firstItem="fbH-5h-7hE" firstAttribute="top" secondItem="fHu-u5-P2w" secondAttribute="bottom" constant="141" id="UQ0-gI-mmr"/>
+                            <constraint firstItem="fHu-u5-P2w" firstAttribute="top" secondItem="VcW-1h-2eW" secondAttribute="bottom" constant="133" id="cct-M5-BLE"/>
+                            <constraint firstItem="fbH-5h-7hE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cfw-g2-l7a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fHu-u5-P2w" secondAttribute="trailing" constant="30" id="jgn-NX-3Nr"/>
+                            <constraint firstItem="VcW-1h-2eW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="134" id="onm-1Y-3qd"/>
+                            <constraint firstItem="fHu-u5-P2w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ryq-aH-cH8"/>
+                            <constraint firstItem="fHu-u5-P2w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="tdb-2V-xvr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="F35-SU-1bl"/>
                     <connections>
-                        <outlet property="UrunadiLabel" destination="cOm-Hn-azy" id="XKn-rF-4Vs"/>
-                        <segue destination="ffK-1t-NX6" kind="show" identifier="gofrom1to2" id="dkY-xU-5jp"/>
+                        <outlet property="girdiAlani" destination="fHu-u5-P2w" id="Wkn-Pk-QHX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -94,118 +71,39 @@ Tavada ızgara tavuklar piştikten sonra servis tabağına alın. Yanında pirin
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMJ-U2-Jzg">
-                                <rect key="frame" x="187" y="254" width="40" height="84"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSN-Xp-qmW">
+                                <rect key="frame" x="176.5" y="172" width="61" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isf-SS-hiE">
-                                <rect key="frame" x="171" y="602" width="72" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Go to 3"/>
-                                <connections>
-                                    <action selector="goTo3:" destination="ffK-1t-NX6" eventType="touchUpInside" id="x54-ux-UWg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQ3-oU-a05">
-                                <rect key="frame" x="169.5" y="723" width="75" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Dismiss"/>
-                                <connections>
-                                    <action selector="Dismiss:" destination="ffK-1t-NX6" eventType="touchUpInside" id="Ayv-5F-wFQ"/>
-                                    <action selector="dismissButton:" destination="ffK-1t-NX6" eventType="touchUpInside" id="0tF-Y4-qno"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRu-UL-eYn">
+                                <rect key="frame" x="171.5" y="438" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8eZ-m1-FyX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Isf-SS-hiE" firstAttribute="top" secondItem="AMJ-U2-Jzg" secondAttribute="bottom" constant="264" id="4eo-Og-gbG"/>
-                            <constraint firstItem="AMJ-U2-Jzg" firstAttribute="centerX" secondItem="zOf-Hx-wSh" secondAttribute="centerX" id="5Xo-Gv-jlD"/>
-                            <constraint firstItem="mQ3-oU-a05" firstAttribute="top" secondItem="Isf-SS-hiE" secondAttribute="bottom" constant="90" id="88t-a8-Dwp"/>
-                            <constraint firstItem="Isf-SS-hiE" firstAttribute="centerX" secondItem="zOf-Hx-wSh" secondAttribute="centerX" id="K2q-LA-1NI"/>
-                            <constraint firstItem="AMJ-U2-Jzg" firstAttribute="top" secondItem="8eZ-m1-FyX" secondAttribute="top" constant="166" id="mcn-dn-eor"/>
-                            <constraint firstItem="mQ3-oU-a05" firstAttribute="centerX" secondItem="zOf-Hx-wSh" secondAttribute="centerX" id="xCm-EB-y8U"/>
+                            <constraint firstItem="xSN-Xp-qmW" firstAttribute="centerX" secondItem="zOf-Hx-wSh" secondAttribute="centerX" id="24f-zd-qgq"/>
+                            <constraint firstItem="xSN-Xp-qmW" firstAttribute="top" secondItem="8eZ-m1-FyX" secondAttribute="top" constant="128" id="8zk-pZ-2Ij"/>
+                            <constraint firstItem="uRu-UL-eYn" firstAttribute="centerX" secondItem="zOf-Hx-wSh" secondAttribute="centerX" id="Mkx-YV-vG4"/>
+                            <constraint firstItem="uRu-UL-eYn" firstAttribute="top" secondItem="xSN-Xp-qmW" secondAttribute="bottom" constant="146" id="rTF-cs-rOz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="b0t-L3-yze"/>
+                    <connections>
+                        <outlet property="etiket" destination="uRu-UL-eYn" id="8un-e1-dGC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oDG-8a-UkA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1763.7681159420292" y="79.6875"/>
         </scene>
-        <!--Third View Controller-->
-        <scene sceneID="tW8-RQ-2mY">
-            <objects>
-                <viewController storyboardIdentifier="ThirdPage" id="HQM-pq-JfI" customClass="ThirdViewController" customModule="GithubConnectTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="u7I-8g-ScA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBe-QF-PhO">
-                                <rect key="frame" x="186" y="210" width="42" height="84"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s89-mg-ptQ">
-                                <rect key="frame" x="172" y="560" width="70" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Go to 1"/>
-                                <connections>
-                                    <action selector="goTo1:" destination="HQM-pq-JfI" eventType="touchUpInside" id="d2n-1y-BkM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLk-J9-qz8">
-                                <rect key="frame" x="171" y="681" width="72" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Go to 2"/>
-                                <connections>
-                                    <action selector="goTo2:" destination="HQM-pq-JfI" eventType="touchUpInside" id="fJX-DN-UX8"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="bQD-En-UJI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="MLk-J9-qz8" firstAttribute="centerX" secondItem="u7I-8g-ScA" secondAttribute="centerX" id="0Q2-cp-KfF"/>
-                            <constraint firstItem="s89-mg-ptQ" firstAttribute="top" secondItem="dBe-QF-PhO" secondAttribute="bottom" constant="266" id="2gX-5o-QNx"/>
-                            <constraint firstItem="dBe-QF-PhO" firstAttribute="centerX" secondItem="u7I-8g-ScA" secondAttribute="centerX" id="9Zg-B4-X9P"/>
-                            <constraint firstItem="s89-mg-ptQ" firstAttribute="centerX" secondItem="u7I-8g-ScA" secondAttribute="centerX" id="bDT-5w-Yrr"/>
-                            <constraint firstItem="dBe-QF-PhO" firstAttribute="top" secondItem="bQD-En-UJI" secondAttribute="top" constant="166" id="mLT-Mv-0uw"/>
-                            <constraint firstItem="MLk-J9-qz8" firstAttribute="top" secondItem="s89-mg-ptQ" secondAttribute="bottom" constant="90" id="wDh-dw-ol1"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CF2-sw-c4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2573.913043478261" y="79.6875"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="P0U-nU-7SC">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="33t-IN-eAN" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fds-KH-6hb">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gs8-JM-LAF"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ptr-qe-tuK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="79.6875"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="yemekresim" width="4000" height="2669"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

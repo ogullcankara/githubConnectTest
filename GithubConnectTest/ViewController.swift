@@ -8,27 +8,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var UrunadiLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        UrunadiLabel.text = "Tavuk Izgara"
-        
     }
 
-   
-    @IBAction func goto2(_ sender: Any) {
-        let nesne = Kisiler(kisiId:123, kisiAd:"Ahmet")
-        performSegue(withIdentifier: "gofrom1to2", sender: nesne)
-        
-    }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let gelenveri = sender as! Kisiler
-        print("Gelen veri : \(gelenveri.kisiId!) \(gelenveri.kisiAd!)")
-        print("Geçiş 1 den 2 ye")
+    @IBOutlet weak var girdiAlani: UITextField!
+    
+    
+    @IBAction func gonder(_ sender: Any) {  
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let gidilecekVC = storyboard.instantiateViewController(withIdentifier: "SecondPage") as! SecondViewController
+        gidilecekVC.modalPresentationStyle = .overFullScreen
+        let gonderilecekMesaj = girdiAlani.text
+        gidilecekVC.mesaj = gonderilecekMesaj!
+        
+        self.present(gidilecekVC, animated: true, completion: nil)
     }
     
 }
